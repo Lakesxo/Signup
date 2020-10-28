@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/Group 41.png" type="image/x-icon">
 </head>
 <body>
+    <div class="container">
+        <form>
+            <div class="top">
+                <h1>Sign Up</h1>
+                <p class="abeg">Please fill this form to create an account !</p>
+            </div>
+            <div class="flex">
+                <div class="left">
+                    <label for="fname">First Name :</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter Firstname">
+                </div>
+                <div class="right">
+                    <label for="lname">Last Name :</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter Lastname">
+                </div>
+            </div>
+            <div class="mail">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="password">
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="cpassword">
+                <label for="cpassword">Confirm password :</label>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm password">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="confam" id="confam">
+                <p class="check">I accept the <span>Terms of Use</span> & <span>Privacy Policy</span>.</p>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <p class="log">Already have an account? <a href="./login.html">Login here</a> !</p>
+    </div>
     
     <script src="./assets/js/index.js"></script>
 </body>
