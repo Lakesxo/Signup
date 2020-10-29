@@ -17,11 +17,11 @@
             <div class="flex">
                 <div class="left">
                     <label for="fname">First Name :</label>
-                    <input type="text" name="fname" id="fname" placeholder="Enter Firstname">
+                    <input type="text" name="fname" id="fname" placeholder="Enter Firstname" onkeypress="return /[a-z!@#$%^&*(),.?'':{}|<>]/i.test(event.key)">
                 </div>
                 <div class="right">
                     <label for="lname">Last Name :</label>
-                    <input type="text" name="lname" id="lname" placeholder="Enter Lastname">
+                    <input type="text" name="lname" id="lname" placeholder="Enter Lastname" onkeypress="return /[a-z!@#$%^&*(),.?'':{}|<>]/i.test(event.key)">
                 </div>
             </div>
             <div class="mail">
@@ -31,17 +31,19 @@
             <div class="password">
                 <label for="password">Password :</label>
                 <input type="password" name="password" id="password" placeholder="Enter password">
+                <p class="length" id="length"></p>
             </div>
             <div class="cpassword">
                 <label for="cpassword">Confirm password :</label>
                 <input type="password" name="cpassword" id="cpassword" placeholder="Confirm password">
+                <p class="error" id="error"></p>
             </div>
             <div class="checkbox">
                 <input type="checkbox" name="confam" id="confam">
                 <p class="check">I accept the <span>Terms of Use</span> & <span>Privacy Policy</span>.</p>
             </div>
             <div class="submit">
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Sign Up" id="submit">
             </div>
         </form>
         <p class="log">Already have an account? <a href="./login.html">Login here</a> !</p>
