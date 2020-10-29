@@ -93,3 +93,38 @@ a {
 .lol {
     margin-top: 20px;
 }
+
+/* Media Queries */
+@media all and (max-width: 780px){
+    form {
+        width: 70%;
+    }
+}
+@media all and (max-width: 480px){
+    form {
+        width: 90%;
+        padding: 20px 15px;
+    }
+    .flex {
+        display: block;
+    }
+    .left, .right {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .container {
+        height: auto;
+        padding-bottom: 150px;
+        padding-top: 50px;
+    }
+    p.log {
+        margin-top: 50px;
+    }
+    p.check {
+        margin-left: 20px;
+    }
+    input[type="submit"]{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
